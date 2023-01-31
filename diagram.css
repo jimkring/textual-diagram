@@ -1,0 +1,38 @@
+Screen {
+    layers: log node;
+}
+
+TextLog {
+    layer: log;
+}
+
+Diagram {
+    opacity: 0%;
+    layer: node;
+
+}
+
+Node {
+    layer: node;
+    width: 4;
+    height: 1;
+    background: $secondary;
+    border: tall $secondary;
+    color: $background;
+    box-sizing: content-box;
+    text-style: bold;
+    padding: 0 0;
+    text-align: center;
+}
+
+Connector {
+    layer: node;
+    width: 1;
+    height: 1;
+    background: greenyellow;
+    border: tall greenyellow;
+    color: greenyellow;
+    box-sizing: border-box;
+    /* text-style: bold; */
+    padding: 0 0;
+}
