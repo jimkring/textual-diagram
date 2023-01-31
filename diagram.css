@@ -25,14 +25,20 @@ Node {
     text-align: center;
 }
 
-Connector {
+VerticalLine {
     layer: node;
-    width: 1;
-    height: 1;
-    background: greenyellow;
     border: tall greenyellow;
-    color: greenyellow;
-    box-sizing: border-box;
-    /* text-style: bold; */
-    padding: 0 0;
+    max-width: 1;
+    height: 10;
+    offset-x: 1.5;
 }
+
+HorizontalLine {
+    layer: node;
+    border: greenyellow;
+    max-height: 1;
+    width: 20;
+    offset-y: -1;
+}
+
+  

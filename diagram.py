@@ -31,27 +31,30 @@ class Node(Static):
             self.offset = self.offset + event.offset - self.drag_offset
 
 
-class Connector(Static):
+class VerticalLine(Static): pass
     
-    source: tuple[int, int] = (0, 0)
-    sink: tuple[int, int] = (0, 0)
-    auto_width: bool = False
-    auto_height: bool = False
-    
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(classes="line-vert", *args, **kwargs)
 
+class HorizontalLine(Static): pass
+    
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(classes="line-horiz", *args, **kwargs)
 
 class DiagramApp(App):
     CSS_PATH = "diagram.css"
 
+
+
     def compose(self) -> ComposeResult:
+        
         yield TextLog()
         yield Diagram(
             Node("A"),
             Node("B"),
             Node("C"),
-            Connector("testing"),
+            VerticalLine(),
+            HorizontalLine(),
         )
 
 
