@@ -44,8 +44,6 @@ class HorizontalLine(Static): pass
 class DiagramApp(App):
     CSS_PATH = "diagram.css"
 
-
-
     def compose(self) -> ComposeResult:
         
         yield TextLog()
