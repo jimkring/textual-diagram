@@ -27,18 +27,19 @@ Node {
 
 VerticalLine {
     layer: node;
-    border: tall greenyellow;
+    border-left: wide greenyellow;
     max-width: 1;
-    height: 10;
-    offset-x: 1.5;
+    height: 0;
+    offset-x: 0;
+    offset-y: 0;
 }
 
 HorizontalLine {
     layer: node;
-    border: greenyellow;
+    border-top: tall greenyellow;
     max-height: 1;
-    width: 20;
-    offset-y: -1;
+    width: 0;
+    offset-y: 0;
+    offset-x: 0;
+    height: 1
 }
-
-  
